@@ -19,8 +19,8 @@ public class Product {
         }
 
 
-      if (qty <= 0) {
-              throw new IllegalArgumentException("Invalid quantity: must be positive.");
+      if (qty < 0) {
+              throw new IllegalArgumentException("Invalid quantity: must be non-negative.");
           }
 
         if (price < 0){
